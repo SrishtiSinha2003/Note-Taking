@@ -46,27 +46,6 @@ Note-Taking/ <br>
 
 ---
 
-## ⚙️ Configuration
-
-To configure the database connection, open `db.php` and update your MySQL credentials:
-
-```php
-<?php
-$host = 'localhost';
-$db   = 'notes_app';
-$user = 'root';
-$pass = '';
-
-// Create connection
-$conn = new mysqli($host, $user, $pass, $db);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-?>
-
-
 ## 🛠️ Set Up the Database
 
 1. Create a MySQL database named `notes_app`.
@@ -94,3 +73,25 @@ CREATE TABLE notes (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
+
+
+## ⚙️ Configuration
+
+To configure the database connection, open `db.php` and update your MySQL credentials:
+
+```php
+<?php
+$host = 'localhost';
+$db   = 'notes_app';
+$user = 'root';
+$pass = '';
+
+// Create connection
+$conn = new mysqli($host, $user, $pass, $db);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+
