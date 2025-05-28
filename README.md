@@ -105,3 +105,9 @@ if ($conn->connect_error) {
 }
 ?>
 ```
+## 4. Run the Project
+- Start your local server (XAMPP/WAMP).
+
+- Place the project folder in the htdocs directory.
+
+- Open a browser and navigate to http://localhost/Note-Taking/index.php.
