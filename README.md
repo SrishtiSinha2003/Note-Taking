@@ -19,6 +19,7 @@ A simple web-based Note-Taking application built using **PHP** and **MySQL**. Th
 - **Database:** MySQL
 
 ## 📁 Project Structure
+📁 Note-Taking/
 ├── README.md # Project documentation
 ├── add.php # Add a new note
 ├── db.php # Database connection file
@@ -28,10 +29,27 @@ A simple web-based Note-Taking application built using **PHP** and **MySQL**. Th
 ├── login.php # User login
 ├── logout.php # User logout
 ├── register.php # User registration
-├── search.php # Search notes
+└── search.php # Search notes
 
 
----
+⚙️ Configuration
+Open db.php and configure your MySQL credentials:
+
+php
+Copy code
+$host = 'localhost';
+$db = 'notes_app';
+$user = 'root';
+$pass = '';
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+
 
 ## 🛠️ Set Up the Database
 
@@ -60,21 +78,3 @@ CREATE TABLE notes (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
-
-⚙️ Configuration
-Open db.php and configure your MySQL credentials:
-
-php
-Copy code
-$host = 'localhost';
-$db = 'notes_app';
-$user = 'root';
-$pass = '';
-
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
