@@ -18,6 +18,15 @@ A simple web-based Note-Taking application built using **PHP** and **MySQL**. Th
 - **Backend:** PHP
 - **Database:** MySQL
 
+## 🛠️ Requirements
+- PHP 7.x or later
+
+- MySQL or MariaDB
+
+- A local server (e.g., XAMPP, WAMP, or MAMP)
+
+
+
 ## 📁 Project Structure
 
 Note-Taking/ <br>
@@ -31,6 +40,7 @@ Note-Taking/ <br>
 ├── logout.php          # User logout<br>
 ├── register.php        # User registration<br>
 └── search.php          # Search notes<br>
+
 
 
 
@@ -55,9 +65,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-
-
-
 
 
 ## 🛠️ Set Up the Database
