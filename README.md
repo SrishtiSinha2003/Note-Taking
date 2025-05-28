@@ -20,17 +20,17 @@ A simple web-based Note-Taking application built using **PHP** and **MySQL**. Th
 
 ## 📁 Project Structure
 
-Note-Taking/
+Note-Taking/ <br>
 ├── README.md           # Project documentation <br>
-├── add.php             # Add a new note
-├── db.php              # Database connection file
-├── delete.php          # Delete a note
-├── edit.php            # Edit an existing note
-├── index.php           # Home/dashboard showing all notes
-├── login.php           # User login
-├── logout.php          # User logout
-├── register.php        # User registration
-└── search.php          # Search notes
+├── add.php             # Add a new note<br>
+├── db.php              # Database connection file<br>
+├── delete.php          # Delete a note<br>
+├── edit.php            # Edit an existing note<br>
+├── index.php           # Home/dashboard showing all notes<br>
+├── login.php           # User login<br>
+├── logout.php          # User logout<br>
+├── register.php        # User registration<br>
+└── search.php          # Search notes<br>
 
 
 
