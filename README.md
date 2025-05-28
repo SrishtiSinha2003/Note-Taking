@@ -111,3 +111,7 @@ if ($conn->connect_error) {
 - Place the project folder in the htdocs directory.
 
 - Open a browser and navigate to http://localhost/Note-Taking/index.php.
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests to enhance the project.
+  
