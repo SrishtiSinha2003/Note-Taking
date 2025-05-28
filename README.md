@@ -54,8 +54,7 @@ Note-Taking/ <br>
 ```bash
 git clone https://github.com/SrishtiSinha2003/Note-Taking.git
 cd Note-Taking
-
-exit
+```
 
 ## 2. 🛠️ Set Up the Database
 
@@ -84,7 +83,7 @@ CREATE TABLE notes (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
+```
 
 ## 3. ⚙️ Configuration
 
@@ -105,4 +104,4 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-
+```
