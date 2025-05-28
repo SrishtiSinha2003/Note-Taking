@@ -31,7 +31,14 @@ A simple web-based Note-Taking application built using **PHP** and **MySQL**. Th
 ├── search.php # Search notes
 
 
-## Set Up the Database
+---
+
+## 🛠️ Set Up the Database
+
+1. Create a MySQL database named `notes_app`.
+2. Run the following SQL statements:
+
+```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
@@ -41,6 +48,13 @@ CREATE TABLE users (
 CREATE TABLE notes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
+    title VARCHAR(100),
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+
     title VARCHAR(100),
     content TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
