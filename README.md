@@ -21,7 +21,7 @@ A simple web-based Note-Taking application built using **PHP** and **MySQL**. Th
 ## 📁 Project Structure
 
 Note-Taking/
-├── README.md           # Project documentation
+├── README.md           # Project documentation <br>
 ├── add.php             # Add a new note
 ├── db.php              # Database connection file
 ├── delete.php          # Delete a note
