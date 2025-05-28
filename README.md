@@ -60,3 +60,21 @@ CREATE TABLE notes (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
+
+
+⚙️ Configuration
+Open db.php and configure your MySQL credentials:
+
+php
+Copy code
+$host = 'localhost';
+$db = 'notes_app';
+$user = 'root';
+$pass = '';
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
