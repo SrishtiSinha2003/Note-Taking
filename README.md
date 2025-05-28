@@ -34,10 +34,13 @@ Note-Taking/ <br>
 
 
 
+---
 
-⚙️ Configuration
-Open db.php and configure your MySQL credentials:
+## ⚙️ Configuration
 
+To configure the database connection, open `db.php` and update your MySQL credentials:
+
+```php
 <?php
 $host = 'localhost';
 $db   = 'notes_app';
@@ -52,6 +55,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
+
 
 
 
