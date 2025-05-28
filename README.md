@@ -55,7 +55,7 @@ Note-Taking/ <br>
 git clone https://github.com/SrishtiSinha2003/Note-Taking.git
 cd Note-Taking
 
-
+exist
 
 ## 2. 🛠️ Set Up the Database
 
