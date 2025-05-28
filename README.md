@@ -19,6 +19,7 @@ A simple web-based Note-Taking application built using **PHP** and **MySQL**. Th
 - **Database:** MySQL
 
 ## 📁 Project Structure
+
 Note-Taking/
 ├── README.md           # Project documentation
 ├── add.php             # Add a new note
@@ -30,6 +31,7 @@ Note-Taking/
 ├── logout.php          # User logout
 ├── register.php        # User registration
 └── search.php          # Search notes
+
 
 
 
