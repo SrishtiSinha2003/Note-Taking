@@ -46,7 +46,18 @@ Note-Taking/ <br>
 
 ---
 
-## 🛠️ Set Up the Database
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/SrishtiSinha2003/Note-Taking.git
+cd Note-Taking
+
+
+
+## 2. 🛠️ Set Up the Database
 
 1. Create a MySQL database named `notes_app`.
 2. Run the following SQL statements:
@@ -75,7 +86,7 @@ CREATE TABLE notes (
 );
 
 
-## ⚙️ Configuration
+## 3. ⚙️ Configuration
 
 To configure the database connection, open `db.php` and update your MySQL credentials:
 
